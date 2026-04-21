@@ -1,19 +1,7 @@
-# ⭐ Star 星星走起 动动发财手点点 ⭐
-## 这是一个用于claw.cloud部署代理 [Hysteria2 + Nezha Agent](https://github.com/vipmc838/claw-hy2-agent) 的轻量级 Docker 镜像。
 
-
-![Docker 镜像大小](https://img.shields.io/docker/image-size/mc838/claw-hy2-agent/latest)
-![Docker 拉取次数](https://img.shields.io/docker/pulls/mc838/claw-hy2-agent)
-![Nezha Agent License](https://img.shields.io/github/license/nezhahq/agent)
-![Hysteria License](https://img.shields.io/github/license/HyNetwork/hysteria)
 
 ## ➡️Claw.Cloud官网(GitHub注册送5美元地址)：[run.claw.cloud](https://console.run.claw.cloud/signin?link=M9P7GXP3M3W5)
 
-## 📦 项目版本说明
-- Hysteria2版本 ➡️[Hysteria2](https://github.com/vipmc838/claw-hy2)：基于 UDP 的高速代理，支持 TLS 加密与伪装。
-- Nezha Agent版本 ➡️[Nezha Agent](https://github.com/vipmc838/claw-agent)：哪吒监控客户端，连接至哪吒面板进行主机监控。
-- 整合版本 ➡️[HY2 Agent](https://github.com/vipmc838/claw-hy2-agent)：Hysteria2 与 Nezha Agent 的集成版，支持一键部署
----
 
 ## 🚀 特性
 
@@ -85,8 +73,6 @@ PASSWORD=a6b091a6-679b-47d1-bc72-a4ac78ba2778
 ---
 ## 鸣谢
 
-- [Hysteria2](https://github.com/HyNetwork/hysteria)
-- [哪吒监控 Agent](https://github.com/nezhahq/agent)
 
 ---
 
