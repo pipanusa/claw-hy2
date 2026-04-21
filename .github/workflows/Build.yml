@@ -1,7 +1,7 @@
 name: "Build and push images"
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 手动触发
 
 jobs:
   Building:
@@ -11,11 +11,10 @@ jobs:
       actions: write
 
     name: "Build image"
-name: "Build image"
-name: "Build image"
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      # 这里的名字请确保是小写
       DOCKERHUB_REPOSITORY: pipake/claw-hy2-agent:latest
 
     steps:
@@ -50,6 +49,7 @@ name: "Build image"
     - name: Push images to Docker hub
       uses: docker/build-push-action@v5.1.0
       with:
+        context: .  
         push: true
         platforms: linux/amd64
-        tags: ${{ env.DOCKERHUB_REPOSITORY }}  # 使用环境变量构建的 Docker Hub 仓库地址和标签
+        tags: ${{ env.DOCKERHUB_REPOSITORY }}
